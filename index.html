@@ -64,13 +64,38 @@
     </nav>
  
     <!-- Hero Section -->
-    <div class="container-fluid hero" style="background: rgb(255,255,255);
+    <div class="container-fluid hero position-relative" style="background: rgb(255,255,255);
       background: linear-gradient(73deg, rgba(255,255,255,1) 8%, #b41da741 87%);">
       <div class="overlay"></div>
+
+
         <div class="container px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-2 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="Assets/Img/hero.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="row flex-lg-row-reverse align-items-center justify-content-center g-2 py-5">
+                <div id="carouselExampleIndicators" class="carousel slide col-10 col-sm-8 col-lg-6" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/Img/Helping.jpg" class="d-block mx-lg-auto img-fluid" style="scale: 70%; border-radius: 2rem 0 2rem;" alt="Helping" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/Img/Mission/Picture 023.jpg" class="d-block mx-lg-auto img-fluid" style="scale: 70%; border-radius: 2rem 0 2rem;" alt="Cross" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/Img/baptism.jpg" class="d-block mx-lg-auto img-fluid" style="scale: 70%; border-radius: 2rem 0 2rem;" alt="Baptism" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold text-body-emphasis lh-2 mb-3">Bringing Light to the World</h1>
